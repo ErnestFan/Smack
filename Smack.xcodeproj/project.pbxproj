@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		172B508420156BAF00E0869C /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B508320156BAF00E0869C /* AuthService.swift */; };
+		172B50862015CEDC00E0869C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B50852015CEDC00E0869C /* RoundedButton.swift */; };
 		176099AB200C5FE1004FEFCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176099AA200C5FE1004FEFCB /* AppDelegate.swift */; };
 		176099B0200C5FE1004FEFCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 176099AE200C5FE1004FEFCB /* Main.storyboard */; };
 		176099B2200C5FE1004FEFCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 176099B1200C5FE1004FEFCB /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		172B508320156BAF00E0869C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		172B50852015CEDC00E0869C /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		176099A7200C5FE1004FEFCB /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		176099AA200C5FE1004FEFCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		176099AF200C5FE1004FEFCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				176099C8200F00DA004FEFCB /* GradientView.swift */,
+				172B50852015CEDC00E0869C /* RoundedButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				176099C7200EBC84004FEFCB /* ChannelVC.swift in Sources */,
+				172B50862015CEDC00E0869C /* RoundedButton.swift in Sources */,
 				176099C5200EBC74004FEFCB /* ChatVC.swift in Sources */,
 				176099D020118CF3004FEFCB /* CreateAccountVC.swift in Sources */,
 				172B508420156BAF00E0869C /* AuthService.swift in Sources */,
