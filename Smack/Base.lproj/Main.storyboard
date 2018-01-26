@@ -300,7 +300,14 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="dKj-IJ-eqX" eventType="touchUpInside" id="XAW-e4-wgW"/>
+                                </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="2tb-oO-wAe">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -312,11 +319,16 @@
                             <constraint firstItem="vA2-07-t7N" firstAttribute="top" secondItem="Fxl-F2-fjX" secondAttribute="bottom" id="IK3-NC-U62"/>
                             <constraint firstItem="vA2-07-t7N" firstAttribute="centerX" secondItem="2M7-cV-aLd" secondAttribute="centerX" id="Ywa-TT-Mn3"/>
                             <constraint firstItem="ZFD-cp-d6D" firstAttribute="centerX" secondItem="2M7-cV-aLd" secondAttribute="centerX" id="bkd-9t-Gtq"/>
+                            <constraint firstItem="2tb-oO-wAe" firstAttribute="centerX" secondItem="2M7-cV-aLd" secondAttribute="centerX" id="cLw-Ox-8xW"/>
                             <constraint firstItem="zY5-pl-hyZ" firstAttribute="centerX" secondItem="2M7-cV-aLd" secondAttribute="centerX" id="kLE-e1-u3r"/>
+                            <constraint firstItem="2tb-oO-wAe" firstAttribute="centerY" secondItem="2M7-cV-aLd" secondAttribute="centerY" constant="-100" id="nLN-Ja-PMt"/>
                             <constraint firstItem="sT8-Ie-aEf" firstAttribute="top" secondItem="0VS-oV-Jdm" secondAttribute="bottom" constant="8" id="pxq-YQ-iAY"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="Aa2-G9-hJV" id="ekE-a0-wxE"/>
+                        <outlet property="spinner" destination="2tb-oO-wAe" id="CxL-Rs-Afr"/>
+                        <outlet property="usernameTxt" destination="9Gr-tI-dQk" id="Mek-Ti-Emb"/>
                         <segue destination="SIk-Vk-lR2" kind="show" identifier="toCreateAccount" id="KQU-XZ-tLu"/>
                     </connections>
                 </viewController>
@@ -463,7 +475,7 @@
                                 </connections>
                             </button>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="7gX-hE-2VP">
-                                <rect key="frame" x="169" y="265" width="37" height="37"/>
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
                                 <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                         </subviews>
@@ -483,7 +495,7 @@
                             <constraint firstItem="J4X-8g-bGS" firstAttribute="centerX" secondItem="wGu-cf-YAQ" secondAttribute="centerX" id="oEO-PZ-19S"/>
                             <constraint firstItem="d54-iy-kDW" firstAttribute="centerX" secondItem="wGu-cf-YAQ" secondAttribute="centerX" id="qk3-BS-saG"/>
                             <constraint firstItem="d54-iy-kDW" firstAttribute="width" secondItem="msJ-n5-6fJ" secondAttribute="width" id="rV6-ok-Aov"/>
-                            <constraint firstItem="7gX-hE-2VP" firstAttribute="centerY" secondItem="wGu-cf-YAQ" secondAttribute="centerY" constant="-50" id="xps-z7-8Zo"/>
+                            <constraint firstItem="7gX-hE-2VP" firstAttribute="centerY" secondItem="wGu-cf-YAQ" secondAttribute="centerY" constant="-100" id="xps-z7-8Zo"/>
                             <constraint firstItem="msJ-n5-6fJ" firstAttribute="centerX" secondItem="wGu-cf-YAQ" secondAttribute="centerX" id="ykk-d7-3vl"/>
                             <constraint firstItem="bL2-8H-8CH" firstAttribute="centerX" secondItem="wGu-cf-YAQ" secondAttribute="centerX" id="zpZ-d3-P7M"/>
                         </constraints>
