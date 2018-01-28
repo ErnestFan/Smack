@@ -14,7 +14,6 @@ class ChannelCell: UITableViewCell {
     
     @IBOutlet weak var channelName: UILabel!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
