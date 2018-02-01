@@ -93,23 +93,87 @@
                                     <action selector="sendMessagePressed:" destination="dln-Kc-1sn" eventType="touchUpInside" id="dfo-in-3Ou"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xam-2a-j12">
+                                <rect key="frame" x="0.0" y="77" width="375" height="520"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" rowHeight="80" id="DEN-EP-4fK" customClass="MessageCell" customModule="Smack" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DEN-EP-4fK" id="TdD-EQ-cQ1">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cvx-nt-taf" customClass="CircleImage" customModule="Smack" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="11" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="BU4-DR-PnY"/>
+                                                        <constraint firstAttribute="width" constant="50" id="Vgz-ZS-kEz"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ernest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOs-6V-GSI">
+                                                    <rect key="frame" x="77" y="11" width="50" height="17"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:33 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onM-dI-Y4Z">
+                                                    <rect key="frame" x="133" y="11.5" width="61" height="17"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lV-2R-8Ut">
+                                                    <rect key="frame" x="77" y="36" width="271" height="18"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="5lV-2R-8Ut" secondAttribute="bottom" constant="15" id="5iA-n9-NmA"/>
+                                                <constraint firstItem="Cvx-nt-taf" firstAttribute="top" secondItem="TdD-EQ-cQ1" secondAttribute="topMargin" id="KEG-cn-ybT"/>
+                                                <constraint firstItem="5lV-2R-8Ut" firstAttribute="leading" secondItem="Cvx-nt-taf" secondAttribute="trailing" constant="12" id="Lf0-HH-kqq"/>
+                                                <constraint firstItem="QOs-6V-GSI" firstAttribute="top" secondItem="Cvx-nt-taf" secondAttribute="top" id="TY3-co-N5n"/>
+                                                <constraint firstItem="5lV-2R-8Ut" firstAttribute="top" secondItem="QOs-6V-GSI" secondAttribute="bottom" constant="8" id="cku-U3-Di3"/>
+                                                <constraint firstItem="QOs-6V-GSI" firstAttribute="leading" secondItem="Cvx-nt-taf" secondAttribute="trailing" constant="12" id="fUH-cR-odh"/>
+                                                <constraint firstItem="onM-dI-Y4Z" firstAttribute="centerY" secondItem="QOs-6V-GSI" secondAttribute="centerY" id="syc-yY-GDE"/>
+                                                <constraint firstItem="onM-dI-Y4Z" firstAttribute="leading" secondItem="QOs-6V-GSI" secondAttribute="trailing" constant="6" id="u6C-UK-sCm"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="5lV-2R-8Ut" secondAttribute="trailing" constant="12" id="vBe-lT-owv"/>
+                                                <constraint firstItem="Cvx-nt-taf" firstAttribute="leading" secondItem="TdD-EQ-cQ1" secondAttribute="leadingMargin" id="xYu-Gi-MlK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="messageBodyLbl" destination="5lV-2R-8Ut" id="fOb-N8-kEj"/>
+                                            <outlet property="timeStampLbl" destination="onM-dI-Y4Z" id="yd1-xf-aKs"/>
+                                            <outlet property="userImg" destination="Cvx-nt-taf" id="kG0-kr-Kht"/>
+                                            <outlet property="userNameLbl" destination="QOs-6V-GSI" id="7iL-gt-E40"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="xam-2a-j12" firstAttribute="leading" secondItem="moM-3w-HOX" secondAttribute="leading" id="0y9-pj-voE"/>
                             <constraint firstAttribute="trailing" secondItem="tvk-7h-6RO" secondAttribute="trailing" id="4bV-UV-KOO"/>
                             <constraint firstItem="fAQ-0O-yny" firstAttribute="trailing" secondItem="moM-3w-HOX" secondAttribute="trailing" id="DM9-jA-Vlf"/>
                             <constraint firstItem="fAQ-0O-yny" firstAttribute="leading" secondItem="moM-3w-HOX" secondAttribute="leading" id="H6P-xa-nY6"/>
                             <constraint firstItem="4tn-Po-irb" firstAttribute="centerY" secondItem="tvk-7h-6RO" secondAttribute="centerY" id="Tfs-mA-hkg"/>
+                            <constraint firstAttribute="trailing" secondItem="xam-2a-j12" secondAttribute="trailing" id="ahE-9K-OpO"/>
                             <constraint firstItem="fAQ-0O-yny" firstAttribute="top" secondItem="moM-3w-HOX" secondAttribute="top" id="bPm-Yg-fh5"/>
                             <constraint firstAttribute="trailing" secondItem="4tn-Po-irb" secondAttribute="trailing" constant="8" id="i4J-Mb-izm"/>
+                            <constraint firstItem="tvk-7h-6RO" firstAttribute="top" secondItem="xam-2a-j12" secondAttribute="bottom" constant="30" id="mlw-LG-ZOz"/>
                             <constraint firstItem="v9q-Bw-w5h" firstAttribute="top" secondItem="tvk-7h-6RO" secondAttribute="bottom" id="pjG-6l-nip"/>
                             <constraint firstItem="tvk-7h-6RO" firstAttribute="leading" secondItem="moM-3w-HOX" secondAttribute="leading" id="rUW-9n-IYn"/>
+                            <constraint firstItem="xam-2a-j12" firstAttribute="top" secondItem="fAQ-0O-yny" secondAttribute="bottom" id="ui1-gc-0XU"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="channelNameLbl" destination="jHy-bK-ubD" id="tpK-j2-KTd"/>
                         <outlet property="menuBtn" destination="I4l-sR-KCG" id="UqR-NY-uPb"/>
                         <outlet property="messageTextBox" destination="tvk-7h-6RO" id="yJm-6H-cH5"/>
+                        <outlet property="tableView" destination="xam-2a-j12" id="lkd-S4-lPH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h2r-y8-OYw" userLabel="First Responder" sceneMemberID="firstResponder"/>
