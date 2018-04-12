@@ -1,2 +1,3 @@
 $ cat .gitattributes
+*.rb linguist-language=Swift
 Pods/* linguist-detectable=false
